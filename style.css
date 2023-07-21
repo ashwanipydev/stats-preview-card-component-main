@@ -79,7 +79,6 @@
     display: flex;
     max-width: 900px;
     background-color: var(--dark-card-background);
-    border: 2px solid black;
     border-radius: 10px;
   }
   
@@ -132,7 +131,10 @@
     font-size: .75rem;
 
   }
-
+  .right_card{
+    background-color:  var(--soft-violet-accent);
+    border-radius: 0 10px 10px 0 ;
+  }
 
   .right_card img{
    display: block;
@@ -140,11 +142,12 @@
    height: 100%;
    object-fit: cover;
    border-radius: 0 10px 10px 0 ;
-   /* background-image: linear-gradient(to right, rgba(36, 3, 85, 0.5),rgba(33, 2, 120, 0.916)); */  /** how to linear-gradient to set same as design*/
+    mix-blend-mode: multiply;
+    opacity: 0.8;
   }
 
 
-  @media (max-width: 600px){
+  @media (max-width: 700px){
     .card-container{
       display: flex;
       flex-direction: column-reverse;
@@ -153,7 +156,10 @@
       border: 2px solid black;
       border-radius: 10px;
     }
-
+    .right_card{
+      background-color:  var(--soft-violet-accent);
+      border-radius: 10px 10px 0 0 ;
+    }
     .right_card img{
       border-radius: 10px 10px 0 0;
     }
